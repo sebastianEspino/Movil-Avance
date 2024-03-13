@@ -34,7 +34,7 @@ public onItemTap(args: ItemEventData) {
   this.apiService.getRegisterById(register.id).subscribe((res) => {
       Dialogs.alert({
           title: 'Detalles!',
-          message: `ID: ${res.id}\nNOMBRE: ${res.nombre}\nDESCRCIPCIÓN: ${res.descripcion} `,
+          message: `ID: ${res.id}\nNOMBRE: ${res.nombre}\nDESCRCIPCIÓN: ${res.descripcion_producto} `,
           okButtonText: 'OK',
           cancelable: true,
       });
