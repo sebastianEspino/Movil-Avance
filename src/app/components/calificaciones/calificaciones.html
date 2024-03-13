@@ -1,0 +1,54 @@
+<ActionBar backgroundColor="black">
+    <Label text="Calificaciones" color="white"></Label>
+    <NavigationButton text="Go back" android.systemIcon="ic_menu_back" (tap)="onTap()" background="white"/>
+</ActionBar>
+<StackLayout  padding="10" backgroundColor="#f4f4f4">
+    <StackLayout id="section_card">
+        <label text="Calificacion del servicio" id="tit2"  height="60" class="texto_centrado" ></label>
+        <FlexboxLayout flexWrap="wrap" justifyContent="space-around" class="p-20 m-t-20">
+            <StackLayout id="card1" class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="lightgray" width="380px" >
+                <Image src="~/app/images/user4.png" width="300px"></Image>
+                <Label text="Mateo Herreno" class="texto_centrado"></Label>
+                <Label class="fas" text="&#xf005;"></Label>
+            </StackLayout>
+            <StackLayout id="card2" class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="lightgray" width="380px">
+                <Image src="~/app/images/user3.png" width="300px"></Image>
+                <Label text="Edward" class="texto_centrado"></Label>
+                <Label class="fas" text="&#xf005;"></Label>
+            </StackLayout>
+            <StackLayout id="card3" class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="lightgray" width="380px" >
+                <Image src="~/app/images/user2.png" width="300px"></Image>
+                <Label text="Juan Esteban Medina" class="texto_centrado"></Label>
+                <Label class="fas" text="&#xf005;"></Label>
+            </StackLayout>
+            <StackLayout id="card4" class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="lightgray" width="380px">
+                <Image src="~/app/images/user1.png" width="300px"></Image>
+                <Label text="Mateo Herreno" class="texto_centrado"></Label>
+                <Label class="fas" text="&#xf005;"></Label>
+            </StackLayout>
+            <StackLayout id="card5" class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="lightgray" width="380px">
+                <Image src="~/app/images/user2.png" width="300px"></Image>
+                <Label text="Juan Esteban Medina" class="texto_centrado"></Label>
+                <Label class="fas" text="&#xf005;"></Label>
+            </StackLayout>
+            <StackLayout id="card" class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="lightgray" width="380px" >
+                <Image src="~/app/images/user1.png" width="300px"></Image>
+                <Label text="Mateo Herreno" class="texto_centrado"></Label>
+                <Label class="fas" text="&#xf005;"></Label>
+            </StackLayout>
+            <Button text="Calificar"></Button>
+        </FlexboxLayout>
+       
+    </StackLayout>
+    <GridLayout rows=" *, auto" height="100%">
+      
+        <StackLayout dock="bottom" row="1" orientation="horizontal" horizontalAlignment="center">
+          <Button class="fas" text="&#xf015;" [nsRouterLink]="['/home']"></Button>
+          <Button class="fas" text="&#xf217;" [nsRouterLink]="['/productos']"></Button>
+          <Button class="fas" text="&#xf007;" [nsRouterLink]="['/verperfil']"></Button>
+        </StackLayout>
+        
+      
+    </GridLayout>
+    
+</StackLayout>

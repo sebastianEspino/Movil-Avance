@@ -1,0 +1,64 @@
+<ActionBar backgroundColor="black">
+    <Label text="Detalles del producto" color="white"></Label>
+    <NavigationButton text="Go back" android.systemIcon="ic_menu_back" (tap)="onTap()" background="black" />
+</ActionBar>
+<ScrollView>
+    <DockLayout backgroundColor="#f4f4f4">
+        <Label text="" dock="left" width="30"></Label>
+        <Label text="" dock="right" width="30"></Label>
+
+        <GridLayout rows=" *, auto" height="100%">
+
+            <page-router-outlet row="0"></page-router-outlet>
+
+            <StackLayout dock="bottom" row="1" orientation="horizontal" horizontalAlignment="center">
+                <Button class="fas" text="&#xf015;" [nsRouterLink]="['/home']"></Button>
+                <Button class="fas" text="&#xf217;" [nsRouterLink]="['/productos']"></Button>
+                <Button class="fas" text="&#xf007;" [nsRouterLink]="['/verperfil']"></Button>
+              </StackLayout>
+            <StackLayout class="product-card" backgroundColor="#f4f4f4">
+
+                <Image src="~/app/images/product.png"></Image>
+
+                <Label class="h2" text="MOBIL SUPER MOTO 4T 20W50"></Label>
+                <label class="negrita" class="h2" text="Precio: $31.000"></label>
+
+
+                <Label class="negrita" text="Descripción:"></Label>
+                <Label style="margin-bottom: 50px;" textWrap="true"
+                    text="Es un aceite mineral de alto desempeño para motores de motocicletas de cuatro tiempos diseñado fundamentalmente para uso general en muchos tipos de motocicletas y motores de cuatro tiempos."></Label>
+                    <label class="negrita" text="Cantidad:"></label>
+                <StackLayout dock="bottom" row="1" orientation="horizontal">
+                    <Button text="-" backgroundColor="black" class="variables"></Button>
+                    <label text="1"></label>
+                    <Button text="+" backgroundColor="black" class="variables"></Button>
+                    
+                </StackLayout>
+                    <Button class="btn_comprar" backgroundColor="#ecbc5b" text="Comprar"></Button>
+                <label text="Productos Relacionados" class="negrita" horizontalAlignment="center"></label>
+
+                <FlexboxLayout flexWrap="wrap" justifyContent="space-around" class="p-15 m-t-20">
+                    <StackLayout id="card" class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="#FFF7DF">
+                        <Image src="~/app/images/nitro_producto.jpg"></Image>
+
+                        <Label class="h2" text="Nitro SportsMan" textWrap="true"></Label>
+                        <Label class="h3" text="Precio: $2.200.000"></Label>
+                        <Button text="Comprar" [nsRouterLink]="['/producto_vista']" pageTransition="slide"
+                            backgroundColor="#ecbc5b"></Button>
+                    </StackLayout>
+                    <StackLayout id="card" class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="#FFF7DF"
+                        >
+                        <Image src="~/app/images/carburador_producto.jpg"></Image>
+
+                        <Label class="h2" text="Carburador para Moto" textWrap="true"></Label>
+                        <Label class="h3" text="Precio: $210.000"></Label>
+                        <Button text="Comprar" [nsRouterLink]="['/producto_vista']" pageTransition="slide"
+                            backgroundColor="#ecbc5b"></Button>
+                    </StackLayout>
+
+                </FlexboxLayout>
+
+            </StackLayout>
+        </GridLayout>
+    </DockLayout>
+</ScrollView>

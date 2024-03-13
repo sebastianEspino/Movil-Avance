@@ -1,0 +1,63 @@
+<ActionBar background="black">
+    <Label class="titulo" text="SERVICIOS" color="white"></Label>
+    <NavigationButton text="Go back" android.systemIcon="ic_menu_back" (tap)="onTap()" />
+</ActionBar>
+
+<ScrollView orientation="vertical">
+    
+    <StackLayout flexWrap="wrap" justifyContent="space-around" class="p-15 " backgroundColor="#FFF7DF">
+        <FlexboxLayout flexWrap="wrap" justifyContent="space-around" class="p-15 " backgroundColor="#FFF7DF">
+            <StackLayout id="card" class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="lightgray">
+                <Image class="imagen_servicio" src="~/app/images/aceite.png"></Image>
+                <Label  text="Cambio de aceite" borderRadius="5" backgroundColor="lightgray"></Label>
+                <button [nsRouterLink]="['/cotizacion']" text="Cotizar"> </button>
+            </StackLayout >
+            <StackLayout id="card" class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="lightgray">
+                <Image class="imagen_servicio" src="~/app/images/latoneria.png"></Image>
+                <Label  text="Latoneria y pintura" borderRadius="5" backgroundColor="lightgray"></Label>
+                <button [nsRouterLink]="['/cotizacion']" text="Cotizar"> </button>
+            </StackLayout >
+            <StackLayout id="card" class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="lightgray">
+                <Image class="imagen_servicio" src="~/app/images/grua.png"></Image>
+                <Label  text="Servicio de grua" borderRadius="5" backgroundColor="lightgray"></Label>
+                <button [nsRouterLink]="['/cotizacion']" text="Cotizar"> </button>
+            </StackLayout >
+            <StackLayout id="card" class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="lightgray">
+                <Image class="imagen_servicio" src="~/app/images/mecanico.png"></Image>
+                <Label  text="Servicio tecnico" borderRadius="5" backgroundColor="lightgray"></Label>
+                <button [nsRouterLink]="['/cotizacion']"text="Cotizar"> </button>
+            </StackLayout >
+            <StackLayout id="card" class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="lightgray">
+                <Image class="imagen_servicio" src="~/app/images/peritage.png"></Image>
+                <Label  text="Peritage" borderRadius="5" backgroundColor="lightgray"></Label>
+                <button [nsRouterLink]="['/cotizacion']" text="Cotizar"> </button>
+            </StackLayout >
+            <StackLayout id="card" class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="lightgray">
+                <Image class="imagen_servicio" src="~/app/images/ruedas.png"></Image>
+                <Label  text="balanceo de ruedas" borderRadius="5" backgroundColor="lightgray"></Label>
+                <button [nsRouterLink]="['/cotizacion']" text="Cotizar"> </button>
+            </StackLayout >     
+            
+        </FlexboxLayout> 
+        <StackLayout class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="black" color="white">
+            <Label  text="Programa tus Servcios con Nosotros" borderRadius="5" backgroundColor="black" color="white"></Label>
+            <button [nsRouterLink]="['/citas']" text="VER Calendario" > </button>
+        </StackLayout>
+         <GridLayout rows=" *, auto" height="100%">
+      
+            <StackLayout  dock="bottom" row="1" orientation="horizontal" horizontalAlignment="center">
+              <Button class="fas" text="&#xf015;" [nsRouterLink]="['/home']"></Button>
+              <Button class="fas" text="&#xf217;" [nsRouterLink]="['/productos']"></Button>
+              <Button class="fas" text="&#xf007;" [nsRouterLink]="['/verperfil']"></Button>
+            </StackLayout>   
+          
+        </GridLayout>
+        
+    </StackLayout>
+   
+      
+    
+</ScrollView>
+
+
+

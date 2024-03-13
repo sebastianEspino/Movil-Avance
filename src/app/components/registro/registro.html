@@ -1,0 +1,44 @@
+<ActionBar>
+    <Label text="Registro"></Label>
+  </ActionBar>
+  
+  <DockLayout stretchLastChild="true" padding="10">
+    <Label text="" dock="left" width="40" ></Label>
+    <Label text="" dock="top" height="10"></Label>
+    <Label text="" dock="right" width="40"></Label>
+    <Label text="" dock="bottom" height="40"></Label>
+    <StackLayout>
+      <Image src="~/app/images/logoR.png"></Image>
+      <Label class="texto_centrado" height="10" ></Label>
+      <StackLayout class="input-field">
+        <Label text="Correo: "></Label>
+        <TextField class="input"></TextField>
+      </StackLayout>
+      <Label class="texto_centrado" height="10" ></Label>
+      <StackLayout class="input-field">
+        <Label text="Contraseña: "></Label>
+        <TextField class="input"></TextField>
+      </StackLayout>
+      <Label class="texto_centrado" height="10" ></Label>
+      <StackLayout class="input-field">
+        <Label text="Contraseña de nuevo: "></Label>
+        <TextField class="input" pl></TextField>
+      </StackLayout>
+      <Label class="texto_centrado" height="10" ></Label>
+      <DockLayout>
+        <Button text="Registrarse" [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true"></Button>
+        <Button text="Cancelar" [nsRouterLink]="['/login']"  pageTransition="slide" clearHistory="true"></Button>
+      </DockLayout>
+      <Label class="texto_centrado" height="10" ></Label>
+      <Label class="texto_centrado" text="¿Ya tiene cuenta?"></Label>
+
+      <FlexBoxLayout justifyContent="space-around">
+        <Image class="red" src="~/app/images/google.png"></Image>
+        <Label text="O"></Label>
+        <Image class="red" src="~/app/images/facebook.png"></Image>
+      </FlexBoxLayout>
+      
+    </StackLayout>
+    
+  
+  </DockLayout>

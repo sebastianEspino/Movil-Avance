@@ -1,0 +1,25 @@
+<ActionBar backgroundColor="black">
+    <Label text="Citas" color="white"></Label>
+    <NavigationButton text="Go back" android.systemIcon="ic_menu_back" (tap)="onTap()" background="white"/>
+</ActionBar>
+
+<StackLayout backgroundColor="#f4f4f4">
+    
+    <Label id="tit" text='Citas asignadas'  class="texto_centrado"></Label>
+    <Image src="~/app/images/calendario.png" id="img1"></Image>
+    <Label text="" height="70px"></Label>
+    <Button text="Agendar" [nsRouterLink]="['/formularioDate']" clearHistory="true" pageTransition="slide"></Button>
+    <GridLayout rows=" *, auto" height="100%">
+      
+        <StackLayout dock="bottom" row="1" orientation="horizontal" horizontalAlignment="center">
+          <Button class="fas" text="&#xf015;" [nsRouterLink]="['/home']"></Button>
+          <Button class="fas" text="&#xf217;" [nsRouterLink]="['/productos']"></Button>
+          <Button class="fas" text="&#xf007;" [nsRouterLink]="['/verperfil']"></Button>
+        </StackLayout>
+        
+      
+    </GridLayout>
+
+
+    
+</StackLayout>

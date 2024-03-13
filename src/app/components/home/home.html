@@ -1,0 +1,20 @@
+<ActionBar>
+  <Label text="Home"></Label>
+</ActionBar>
+
+<DockLayout stretchLastChild="true" padding="10">
+  
+  <StackLayout backgroundColor="#FFF7DF">
+    <Image src="~/app/images/logoR.png" height="250"></Image>
+    <Label class="texto_centrado" text="Menu principal" height="70" backgroundColor="gray" color="white"></Label>
+    <StackLayout backgroundColor="#f4f4f4">
+      <Button text="Ver perfil" [nsRouterLink]="['/verperfil']" pageTransition="slide" clearHistory="true"></Button>
+      <Button text="Calificaciones" [nsRouterLink]="['/calificaciones']" pageTransition="slide" clearHistory="true"></Button>
+      <Button text="Citas" [nsRouterLink]="['/citas']" pageTransition="slide" clearHistory="true"></Button>
+      <Button text="Servicios" [nsRouterLink]="['/servicio']" pageTransition="slide" clearHistory="true"></Button>
+      <Button text="Productos" [nsRouterLink]="['/productos']" pageTransition="slide" clearHistory="true"></Button>
+      <Button text="Cotizaciones" [nsRouterLink]="['/cotizacion']" pageTransition="slide" clearHistory="true"></Button>
+      <Button text="Cerrar sesion" (tap)="onExit()"></Button>
+    </StackLayout>
+  </StackLayout>
+</DockLayout>

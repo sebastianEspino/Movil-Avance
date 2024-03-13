@@ -1,0 +1,9 @@
+#card{
+    border-color: black;
+    border-radius: 5;
+    width: 375px;
+    border-width: 2;
+}
+button{
+    height: 100px;
+}

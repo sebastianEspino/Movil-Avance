@@ -1,0 +1,142 @@
+@import '@nativescript/theme/css/core.css';
+@import '@nativescript/theme/css/default.css';
+
+/* Place any CSS rules you want to apply on both iOS and Android here.
+This is where the vast majority of your CSS code goes. */
+
+.texto_centrado{
+    text-align: center;
+    font-size: 16px;
+}
+
+.far {
+    font-family: "Font Awesome 5 Free", "fa-regular-400";
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands", "fa-brands-400";
+}
+
+.fas {
+    font-family: "Font Awesome 5 Free", "fa-solid-900";
+    width: 200px;
+}
+
+.texto_centrado{
+    text-align: center;
+    font-size: 16px;
+}
+
+.btn{
+   margin-top: 70px;
+   border-radius: 5%;
+}
+
+#s{
+    border-radius: 5%;
+}
+
+
+#h{
+    border-radius: 5%;
+}
+
+button{
+    color: white;
+}
+
+#img{
+    width: 790px;
+    height: 450px;
+    border-radius: 10%
+}
+
+#k{
+    border-radius: 10%;
+}
+
+.btns{
+    border-radius: 2%;
+}
+
+.bt_gr{
+    border-radius: 50%;
+    height: 150px;
+    width: 800px;
+    font-size: 40px;
+}
+
+.card{
+    border-radius: 15%;
+}
+
+.auto{
+    border-radius: 15%;
+}
+
+.separador{
+    height: 10em;
+    border-radius: 15%
+}
+
+.imgs{
+    width: 250px;
+    height: 650px;
+    border-radius: 10%;
+}
+.m{
+    text-align: center;
+    font-size: 18px;
+}
+
+.ruedas{
+    width: 100%;
+    
+}
+
+
+.fas{
+    width: 200px;
+    border-radius: 0%;
+    background-color: white;
+    color: black;
+    
+}
+
+button{
+    width: 400px;
+    border-radius: 20%;
+    background-color:#cea322;
+}
+
+
+.fas{
+    width: 200px;
+    border-radius: 0%;
+    background-color:white;
+    color: black;
+    
+}
+
+label{
+    color:rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+.card2{
+    width: 15%;
+    text-align: center;
+    border-radius:10%;
+    background-color:#0000;
+    border: 1px ;
+
+}
+
+
+.imagen_servicio{
+    width: 120em;
+    height: 120em;
+    
+}
+
+

@@ -1,0 +1,22 @@
+.negrita{
+    font-weight: bold;
+    
+}
+
+.btn_comprar{
+    padding-left: 150px;
+    padding-right: 150px;
+    width: 500px;
+}
+
+.varibales{
+    width: 30px;
+    height: 50px;
+}
+
+#card{
+    border-color: black;
+    border-radius: 5;
+    width: 325px;
+    border-width: 2;
+}

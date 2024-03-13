@@ -1,0 +1,7 @@
+TextField{
+    border-color: black;
+    background-color: white;
+    border-width:1px;
+    border-radius: 20px;
+    height: 100px;
+}

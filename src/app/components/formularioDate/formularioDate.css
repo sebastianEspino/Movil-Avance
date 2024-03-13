@@ -1,0 +1,33 @@
+TextField{
+    border-color: black;
+    background-color: white;
+    border-width:1px;
+    border-radius: 20px;
+    height: 100px;
+}
+
+button{
+    width: 400px;
+    border-radius: 20%;
+    background-color:#cea322;
+}
+
+
+.fas{
+    width: 200px;
+    border-radius: 0%;
+    background-color: white;
+    color: black;
+    
+}
+
+#form_tit{
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+label{
+    color: black;
+    font-size: 14px;
+}

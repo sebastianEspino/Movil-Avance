@@ -1,0 +1,35 @@
+<ActionBar>
+    <Label text="Login"></Label>
+  </ActionBar>
+  
+  <DockLayout stretchLastChild="true" padding="10">
+    <Label text="" dock="left" width="40" ></Label>
+    <Label text="" dock="top" height="40"></Label>
+    <Label text="" dock="right" width="40"></Label>
+    <Label text="" dock="bottom" height="40"></Label>
+    <StackLayout>
+      <Image src="~/app/images/logoR.png"></Image>
+      <Label class="texto_centrado" height="30" ></Label>
+      <StackLayout class="input-field">
+        <Label text="Correo: "></Label>
+        <TextField class="input"></TextField>
+      </StackLayout>
+      <Label class="texto_centrado" height="30" ></Label>
+      <StackLayout class="input-field">
+        <Label text="Contraseña: "></Label>
+        <TextField class="input"></TextField>
+      </StackLayout>
+      <Label class="texto_centrado" height="30" ></Label>
+      <DockLayout>
+        <Button text="Iniciar Sesion" [nsRouterLink]="['/home']" pageTransition="slide" clearHistory="true"></Button>
+        <Button text="Registrarse" [nsRouterLink]="['/registro']"  pageTransition="slide" clearHistory="true"></Button>
+      </DockLayout>
+      <Label class="texto_centrado" height="10" ></Label>
+      <Label class="texto_centrado" text="¿Olvidaste la Contraseña?"></Label>
+      <Label class="texto_centrado" height="30" ></Label>
+
+      
+    </StackLayout>
+    
+  
+  </DockLayout>

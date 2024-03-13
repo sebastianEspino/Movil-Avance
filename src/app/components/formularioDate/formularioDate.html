@@ -1,0 +1,43 @@
+<ActionBar backgroundColor='black'>
+    <Label text="Formulario cita" color="white"></Label>
+    <NavigationButton text="Go back" android.systemIcon="ic_menu_back" (tap)="onTap()" />
+</ActionBar>
+
+<StackLayout padding="30" backgroundColor="#f4f4f4" >
+    <Label text="Formulario de citas" class="texto_centrado" id="form_tit"></Label>
+    <Label class="texto_centrado" height="30" ></Label>
+    <StackLayout class="input-field">
+        <Label text="Fecha de cita: "></Label>
+        <TextField class="input"></TextField>
+    </StackLayout>
+      <Label class="texto_centrado" height="30" ></Label>
+    <StackLayout class="input-field">
+        <Label text="Hora: "></Label>
+        <TextField class="input"></TextField>
+    </StackLayout>
+    <Label class="texto_centrado" height="30" ></Label>
+    <StackLayout class="input-field">
+        <Label text="Empleado: "></Label>
+        <TextField class="input"></TextField>
+    </StackLayout>
+    <Label class="texto_centrado" height="30" ></Label>
+    <StackLayout class="input-field">
+        <Label text="Servicio: "></Label>
+        <TextField class="input"></TextField>
+    </StackLayout>
+    <Label class="texto_centrado" height="30" ></Label>
+    <Button text="Agendar"></Button>
+
+    <GridLayout rows=" *, auto" height="100%">
+      
+        <StackLayout dock="bottom" row="1" orientation="horizontal" horizontalAlignment="center">
+          <Button class="fas" text="&#xf015;" [nsRouterLink]="['/home']"></Button>
+          <Button class="fas" text="&#xf217;" [nsRouterLink]="['/productos']"></Button>
+          <Button class="fas" text="&#xf007;" [nsRouterLink]="['/verperfil']"></Button>
+        </StackLayout>
+        
+      
+    </GridLayout>
+    
+
+</StackLayout>

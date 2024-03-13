@@ -1,0 +1,41 @@
+#pe{
+    border-radius: 90px;
+    width: 300px;
+}
+
+TextField{
+    border-color: black;
+    background-color: white;
+    border-width:1px;
+    border-radius: 20px;
+    height: 100px;
+}
+
+.fas{
+    width: 200px;
+    border-radius: 0%;
+    background-color: white;
+    color: black;
+    
+}
+
+button{
+    width: 400px;
+    border-radius: 20%;
+    background-color:#cea322;
+}
+
+
+.fas{
+    width: 200px;
+    border-radius: 0%;
+    background-color:white;
+    color: black;
+    
+}
+
+label{
+    color:rgb(0, 0, 0);
+    font-size: 14px;
+}
+

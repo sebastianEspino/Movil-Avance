@@ -1,0 +1,73 @@
+<ActionBar backgroundColor="white" >
+    <Label text="Tienda Virtual" color="black"></Label>
+    <NavigationButton text="Go back" android.systemIcon="ic_menu_back" (tap)="onTap()" />
+</ActionBar>
+
+<ScrollView orientation="vertical">
+    <GridLayout rows="700 300 265 ">
+
+
+        <StackLayout row="0"  justifyContent="center" backgroundColor="#F5D8A4"  >
+            <StackLayout  backgroundColor="black"  justifyContent="center"  width="320"  marginTop="15" height="250" id="k">
+                <Image src="~/app/images/tuercas.png" marginTop="10"  id="img"></Image>
+                <button backgroundColor="green" class="bt_gr"  color="white" text="Agenda tu cita"  ></button>
+                
+            </StackLayout>
+
+            <StackLayout  paddingTop="10">
+            <button backgroundColor="black"  color="white"    text="Servicio de grua" width="400" height="40" ></button>
+            <button backgroundColor="#DE8402"  color="white"   text="Revicion preventiva" width="400" height="40" ></button>
+            <button backgroundColor="black"   color="white" text="Taller" width="400" height="40" ></button>
+            </StackLayout>
+
+            
+            <FlexboxLayout  justifyContent="space-around" marginTop="25">
+                <StackLayout   backgroundColor="black" class="card" width="150" height="250" paddingTop="10">
+                    <Image src="~/app/images/autopartes.jpg" width="130" class="auto"></Image>
+                    <button text="Auto partes" marginTop="25" color="white" backgroundColor="green"></button>
+                </StackLayout>
+
+                <StackLayout  backgroundColor="black" class="card" width="150" height="250" paddingTop="10">
+                    <Image src="~/app/images/asistente.png" width="130" class="auto"></Image>
+                    <button text="Asistencia" marginTop="25" color="white" backgroundColor="green"></button>
+                </StackLayout>
+            </FlexboxLayout>
+              
+        </StackLayout>
+    
+
+
+
+
+
+
+
+
+
+
+
+        <StackLayout row="1" backgroundColor="#F5D8A4"  paddingTop="15">
+            <label  class="separador" backgroundColor="black"></label>
+            <Label text="Avalados por las grandes marcas" class="text-center" class="m" color="black"></Label>
+            <label  class="separador" backgroundColor="black"></label>
+            <FlexboxLayout flexWrap="wrap" justifyContent="space-around" >
+                <img src="~/app/images/volvo.png" class="imgs">
+                <img src="~/app/images/ferrari.png" class="imgs">
+                <img src="~/app/images/nissan.png" class="imgs">
+            </FlexboxLayout>
+        </StackLayout >
+
+        <StackLayout  row="2" backgroundColor="#F5D8A4"  paddingTop="15">
+            <label  class="separador" backgroundColor="black"></label>
+            <Label text="Las mejores marcas de ruedas" class="text-center" class="m" color="black"></Label>
+            <label  class="separador" backgroundColor="black"></label>
+            <StackLayout   paddingTop="15">
+                <img src="~/app/images/ruedas.png" class="ruedas">
+                
+            </StackLayout>
+            <label  class="separador" backgroundColor="black" marginTop="25"></label>
+        </StackLayout>
+    
+
+    </GridLayout>
+</ScrollView>
