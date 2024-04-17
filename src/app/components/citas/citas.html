@@ -6,7 +6,7 @@
 <StackLayout backgroundColor="#f4f4f4">
     <Label id="tit" text='Citas agendadas'  class="texto_centrado"></Label>
     <Image src="~/app/images/calendario.png" id="img1"></Image>
-    <ListView height="150" [items]="citas" (itemTap)="onItemTap($event)" class="list-group">
+    <ListView height="150" [items]="citas"  class="list-group">
         <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
             <GridLayout columns="30, *, 35, auto">
                 <Label [text]="item.id" col="0" class="fas list-group-item"></Label>

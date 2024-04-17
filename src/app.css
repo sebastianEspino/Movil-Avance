@@ -80,10 +80,11 @@ button{
 }
 
 .imgs{
-    width: 250px;
-    height: 650px;
+    width: 60%;
+    height: 80%;
     border-radius: 10%;
 }
+
 .m{
     text-align: center;
     font-size: 18px;
