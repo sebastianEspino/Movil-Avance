@@ -46,9 +46,8 @@ button{
 }
 
 #img{
-    width: 790px;
-    height: 450px;
-    border-radius: 10%
+    width: 90%;
+    height: 70%;
 }
 
 #k{
@@ -67,6 +66,7 @@ button{
 }
 
 .card{
+    padding: 4%;
     border-radius: 15%;
 }
 
@@ -80,14 +80,18 @@ button{
 }
 
 .imgs{
-    width: 250px;
-    height: 650px;
+    width: 70%;
+    height: 80%;
     border-radius: 10%;
 }
 .m{
+    padding: auto;
+    text-wrap: True;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
 }
+
+
 
 .ruedas{
     width: 100%;
@@ -104,7 +108,7 @@ button{
 }
 
 button{
-    width: 400px;
+    width: 90%;
     border-radius: 20%;
     background-color:#cea322;
 }

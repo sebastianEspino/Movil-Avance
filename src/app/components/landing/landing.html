@@ -4,7 +4,7 @@
 </ActionBar>
 
 <ScrollView orientation="vertical">
-    <GridLayout rows="600 220 330 700 " backgroundColor="#faf5e2">
+    <GridLayout rows="600 300 330 700 " backgroundColor="#faf5e2">
 
         
         <StackLayout row="0"  justifyContent="center"   >
@@ -14,14 +14,14 @@
             
             <FlexboxLayout  justifyContent="space-around" marginTop="2">    
             <StackLayout  backgroundColor="black"  justifyContent="center"  width="210"  marginTop="15" height="240" id="k">
-                <Image src="~/app/images/tuercas.png" marginBottom="10" marginTop="33"  id="img"></Image>
+                <Image src="~/app/images/tuercas.png" id="img"></Image>
                 <button backgroundColor="#CA2141"  color="white" width="160" height="40" text="¡AGENDA TU CITA!"></button>
                     
             </StackLayout>
             <StackLayout  paddingTop="60">
-                <button backgroundColor="#CA2141"  color="white" text="Servicio de grua" width="160" height="40" ></button>
-                <button backgroundColor="#CA2141"  color="white" text="Revicion preventiva" width="160" height="40" ></button>
-                <button backgroundColor="#CA2141"  color="white" text="Taller" width="160" height="40" ></button>
+                <button backgroundColor="#CA2141"  color="white" text="Servicio de grua" width="230" height="40" ></button>
+                <button backgroundColor="#CA2141"  color="white" text="Revicion preventiva" width="230" height="40" ></button>
+                <button backgroundColor="#CA2141"  color="white" text="Taller" width="230" height="40" ></button>
                 </StackLayout>
             
             </FlexboxLayout>
@@ -49,7 +49,7 @@
             <label  class="separador" backgroundColor="black"></label>
             <Label text="Productos de 1° calidad" class="text-center" class="m" color="black"></Label>
             <label  class="separador" backgroundColor="black" marguinBottom="30" ></label>
-            <FlexboxLayout flexWrap="wrap" justifyContent="space-around" >
+            <FlexboxLayout justifyContent="space-around" style="margin-top: 45;" >
                 <img src="~/app/images/volvo.png" class="imgs" >
                 <img src="~/app/images/ferrari.png" class="imgs">
                 <img src="~/app/images/nissan.png" class="imgs">
@@ -58,7 +58,7 @@
 
         
 
-        <StackLayout  row="2" backgroundColor="#fcf9ee"  paddingTop="15">
+        <StackLayout  row="2" backgroundColor="#fcf9ee"   paddingTop="15">
             <label  class="separador" backgroundColor="black"></label>
             <Label text="Productos destacados" class="text-center" class="m" color="black"></Label>
             <label  class="separador" backgroundColor="black"></label>
@@ -69,14 +69,14 @@
                     <button text="Cotizar" [nsRouterLink]="['/producto_vista']" width="100" marginTop="10" color="white" backgroundColor="#CA2141"></button>
                 </StackLayout>
 
-                <StackLayout   backgroundColor="black" class="card" width="120" height="220" paddingTop="10">
+                <StackLayout   backgroundColor="black" class="card" width="120" height="220" paddingTop="5">
                     <Image src="~/app/images/carburador_producto.jpg" width="100" class="auto"></Image>
-                    <Label text="Carburador" class="text-center" class="m" color="white" paddingTop="5"></Label>
+                    <Label text="Carburador" class="text-center" class="m" color="white" paddingTop="10"></Label>
                     <button text="Cotizar" width="100" [nsRouterLink]="['/producto_vista']" marginTop="10" color="white" backgroundColor="#CA2141"></button>
                 </StackLayout>
-                <StackLayout   backgroundColor="black" class="card" width="120" height="200" paddingTop="10" >
+                <StackLayout backgroundColor="black" class="card" width="120" height="200" paddingTop="5" >
                     <Image src="~/app/images/nitro_producto.jpg" width="100" class="auto"></Image>
-                    <Label text="Full Sistem Nitro" class="text-center" class="m" color="white" paddingTop="15"></Label>
+                    <Label text="Full Sistem Nitro" class="text-center" class="m" color="white" paddingTop="5"></Label>
                     <button text="Cotizar" [nsRouterLink]="['/producto_vista']" width="100" marginTop="5" color="white" backgroundColor="#CA2141"></button>
                 </StackLayout>
             </FlexboxLayout>
@@ -92,7 +92,7 @@
                 <StackLayout   backgroundColor="black" class="card" width="170" height="250" paddingTop="10">
                     <Image src="~/app/images/aceite.png" width="130" class="auto"></Image>
                     <Label text="Cambio de aceite" class="text-center" class="m" color="white" paddingTop="5"></Label>
-                    <button text="Cotizar" [nsRouterLink]="['/cotizacion']" marginTop="10" color="white" backgroundColor="#CA2141"></button>
+                    <button text="Cotizar" [nsRouterLink]="['/cotizacion']"  marginTop="10" color="white" backgroundColor="#CA2141"></button>
                 </StackLayout>
 
                 <StackLayout  backgroundColor="black" class="card" width="170" height="250" paddingTop="25">
