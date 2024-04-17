@@ -6,11 +6,11 @@ import { TextField } from "@nativescript/core";
 
 
 @Component({
-    selector: 'formulario_calificacion',
-    templateUrl: './formulario_calificacion.html',
-    styleUrls: ['./formulario_calificacion.css'],
+    selector: 'calificacionForm',
+    templateUrl: './calificacionForm.html',
+    styleUrls: ['./calificacionForm.css'],
   })
-  export class CalificacionesComponent {
+  export class CalificacionFormComponent {
     public constructor(private router: Router) {
       // Use the component constructor to inject providers.
     }

@@ -12,24 +12,24 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getRegisters(): Observable<any[]> {
-    return this.http.get<any[]>(`${this.apiUrl}/Productos/`);
+    return this.http.get<any[]>(`${this.apiUrl}/Citas`);
   }
 
   getRegisterById(id: number): Observable<any> {
-    return this.http.get<any>(`${this.apiUrl}/Productos/${id}/`);
+    return this.http.get<any>(`${this.apiUrl}/Citas/${id}/`);
   }
 
   addRegister(post: any): Observable<any> {
-    return this.http.post<any>(`${this.apiUrl}/Productos/`, post);
+    return this.http.post<any>(`${this.apiUrl}/Citas`, post);
   }
 
   updateRegister(id: number, post: any): Observable<any> {
     console.log(`datos: ${post.nombre_cat} - ${post.desc}`)
-    return this.http.put<any>(`${this.apiUrl}/Productos/${id}/`, post);
+    return this.http.put<any>(`${this.apiUrl}/Citas/${id}/`, post);
   }
 
   deleteRegister(id: number): Observable<any> {
-    return this.http.delete<any>(`${this.apiUrl}/Productos/${id}/`);
+    return this.http.delete<any>(`${this.apiUrl}/Citas/${id}/`);
   }
 
   

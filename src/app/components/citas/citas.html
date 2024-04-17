@@ -4,9 +4,18 @@
 </ActionBar>
 
 <StackLayout backgroundColor="#f4f4f4">
-    
-    <Label id="tit" text='Citas asignadas'  class="texto_centrado"></Label>
+    <Label id="tit" text='Citas agendadas'  class="texto_centrado"></Label>
     <Image src="~/app/images/calendario.png" id="img1"></Image>
+    <ListView height="150" [items]="citas" (itemTap)="onItemTap($event)" class="list-group">
+        <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
+            <GridLayout columns="30, *, 35, auto">
+                <Label [text]="item.id" col="0" class="fas list-group-item"></Label>
+                <Label [text]="item.fechaServicio" col="1" class="fas list-group-item"></Label>
+                <Label text="&#xf2ed;" col="2" class="far list-group-item" (tap)="eliminarCat(item)"></Label>
+                <Label text="&#xf044;" col="3" class="far list-group-item" (tap)="editarCat(item)"></Label>
+            </GridLayout>
+        </ng-template>
+    </ListView>
     <Label text="" height="70px"></Label>
     <Button text="Agendar" [nsRouterLink]="['/formularioDate']" clearHistory="true" pageTransition="slide"></Button>
     <GridLayout rows=" *, auto" height="100%">

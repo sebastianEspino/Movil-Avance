@@ -11,7 +11,7 @@ import { ServicioComponent } from "./components/servicio/servicio";
 import { ProductosComponent } from "./components/productos/productos"; 
 import { Producto_VistaComponent } from "./components/producto_vista/producto_vista"; 
 import { EditarPerfilComponent } from "./components/editarPerfil/editarPerfil"; 
-//import { formulario_calificacionComponent } from "./components/formulario_calificacion/formulario_calificacion";
+import { CalificacionFormComponent } from "./components/calificacion_form/calificacionForm";
 
 
 
@@ -31,7 +31,7 @@ export const appRoutes: any = [
   { path: "productos", component: ProductosComponent },
   { path: "producto_vista", component: Producto_VistaComponent },
   { path: "editarPerfil" , component: EditarPerfilComponent },
-  //{ path: "formulario_calificacion" , component: formulario_calificacionComponent },
+  { path: "formulario_calificacion" , component: CalificacionFormComponent },
   
   
 
@@ -51,6 +51,6 @@ export const appComponents: any = [
   ProductosComponent,
   Producto_VistaComponent,
   EditarPerfilComponent,
-  //formulario_calificacionComponent
+  CalificacionFormComponent
 
 ];
