@@ -1,5 +1,10 @@
-<ActionBar>
-  <Label text="Home"></Label>
+<ActionBar title="test">
+  <StackLayout orientation="horizontal"
+    ios:horizontalAlignment="center"
+    android:horizontalAlignment="left">
+    <Label text="YourTest"  class="action-label"></Label>
+    <Image src="res://Your_Image" class="action-image"></Image>
+  </StackLayout>
 </ActionBar>
 
 <DockLayout stretchLastChild="true" padding="10">
@@ -13,7 +18,7 @@
       <Button text="Citas" [nsRouterLink]="['/citas']" pageTransition="slide" clearHistory="true"></Button>
       <Button text="Servicios" [nsRouterLink]="['/servicio']" pageTransition="slide" clearHistory="true"></Button>
       <Button text="Productos" [nsRouterLink]="['/productos']" pageTransition="slide" clearHistory="true"></Button>
-      <Button text="Cotizaciones" [nsRouterLink]="['/landing']" pageTransition="slide" clearHistory="true"></Button>
+      <Button text="Cotizaciones" [nsRouterLink]="['/cotizacion']" pageTransition="slide" clearHistory="true"></Button>
       <Button text="Cerrar sesion" (tap)="onExit()"></Button>
     </StackLayout>
   </StackLayout>

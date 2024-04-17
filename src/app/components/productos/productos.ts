@@ -86,7 +86,10 @@ public eliminarCat(item){
 
 }
 
-
+public editarCat(item){
+  console.log(`Editar cat: ${item.id}`)
+  //this.router.navigate(['categorias-editar'], { queryParams: { id: item.id } });
+}
 
 }
 

@@ -1,6 +1,5 @@
 <ActionBar backgroundColor="black">
     <Label text="Detalles del producto" color="white"></Label>
-    <NavigationButton text="Go back" android.systemIcon="ic_menu_back" (tap)="onTap()" background="black" />
 </ActionBar>
 <ScrollView>
     <DockLayout backgroundColor="#f4f4f4">
@@ -28,10 +27,10 @@
                 <Label style="margin-bottom: 50px;" textWrap="true"
                     text="Es un aceite mineral de alto desempeño para motores de motocicletas de cuatro tiempos diseñado fundamentalmente para uso general en muchos tipos de motocicletas y motores de cuatro tiempos."></Label>
                     <label class="negrita" text="Cantidad:"></label>
-                <StackLayout dock="bottom" row="1" orientation="horizontal">
-                    <Button text="-" backgroundColor="black" class="variables"></Button>
+                <StackLayout dock="bottom" row="1" orientation="horizontal" horizontalAlignment="center">
+                    <Button text="-" backgroundColor="black" ></Button>
                     <label text="1"></label>
-                    <Button text="+" backgroundColor="black" class="variables"></Button>
+                    <Button text="+" backgroundColor="black" ></Button>
                     
                 </StackLayout>
                     <Button class="btn_comprar" backgroundColor="#ecbc5b" text="Comprar"></Button>

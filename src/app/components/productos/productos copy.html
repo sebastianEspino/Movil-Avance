@@ -6,12 +6,47 @@
   <StackLayout backgroundColor="#f4f4f4">
     <label class="negrita" text="Productos" id="tit2" height="60" horizontalAlignment="center"></label>
     <FlexboxLayout flexWrap="wrap" justifyContent="space-around" class="p-15 m-t-20">
-      <StackLayout *ngFor="let producto of productos" id="card"  class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="#FFF7DF" >
-        <Image src="{{ producto.foto }}"></Image>
+      <StackLayout id="card"  class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="#FFF7DF" >
+        <Image src="~/app/images/product.png"></Image>
 
-        <Label class="h2" text="{{ producto.nombre }}" textWrap="true"></Label>
-        <Label class="h3" text="{{ producto.Precio }}"></Label>
+        <Label class="h2" text="MOBIL SUPER MOTO 4T 20W50" textWrap="true"></Label>
+        <Label class="h3" text="Precio: $31.000"></Label>
         <Button text="Comprar" [nsRouterLink]="['/producto_vista']" pageTransition="slide"   backgroundColor="#ecbc5b"></Button>
+      </StackLayout>
+      <StackLayout id="card"  class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="#FFF7DF" >
+        <Image  src="~/app/images/nitro_producto.jpg"></Image>
+
+        <Label class="h2" text="MOBIL SUPER MOTO 4T 20W50" textWrap="true"></Label>
+        <Label class="h3" text="Precio: $31.000"></Label>
+        <Button text="Comprar" [nsRouterLink]="['/producto_vista']" pageTransition="slide"  backgroundColor="#ecbc5b"></Button>
+      </StackLayout>
+      <StackLayout id="card"  class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="#FFF7DF" >
+        <Image src="~/app/images/carburador_producto.jpg"></Image>
+
+        <Label class="h2" text="MOBIL SUPER MOTO 4T 20W50" textWrap="true"></Label>
+        <Label class="h3" text="Precio: $31.000"></Label>
+        <Button text="Comprar" [nsRouterLink]="['/producto_vista']" pageTransition="slide"  backgroundColor="#ecbc5b"></Button>
+      </StackLayout>
+      <StackLayout id="card"  class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="#FFF7DF" >
+        <Image src="~/app/images/frenos_producto.jpg"></Image>
+
+        <Label class="h2" text="MOBIL SUPER MOTO 4T 20W50" textWrap="true"></Label>
+        <Label class="h3" text="Precio: $31.000"></Label>
+        <Button text="Comprar" [nsRouterLink]="['/producto_vista']" pageTransition="slide"  backgroundColor="#ecbc5b"></Button>
+      </StackLayout>
+      <StackLayout id="card"  class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="#FFF7DF" >
+        <Image src="~/app/images/product.png"></Image>
+
+        <Label class="h2" text="MOBIL SUPER MOTO 4T 20W50" textWrap="true"></Label>
+        <Label class="h3" text="Precio: $31.000"></Label>
+        <Button text="Comprar" [nsRouterLink]="['/producto_vista']" pageTransition="slide"  backgroundColor="#ecbc5b"></Button>
+      </StackLayout>
+      <StackLayout id="card"  class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="#FFF7DF" >
+        <Image src="~/app/images/product.png"></Image>
+
+        <Label class="h2" text="MOBIL SUPER MOTO 4T 20W50" textWrap="true"></Label>
+        <Label class="h3" text="Precio: $31.000"></Label>
+        <Button text="Comprar" [nsRouterLink]="['/producto_vista']" pageTransition="slide"  backgroundColor="#ecbc5b"></Button>
       </StackLayout>
     </FlexboxLayout>
     <GridLayout rows=" *, auto" height="100%">

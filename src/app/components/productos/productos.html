@@ -1,31 +1,16 @@
-<ActionBar background="black">
-  <Label class="titulo" text="Productos" color="white"></Label>
-  <NavigationButton text="Go back" android.systemIcon="ic_menu_back" (tap)="onTap()" />
+<ActionBar backgroundColor="black">
+  <Label style="color: white" text="Productos" ></Label>
+  
 </ActionBar>
-
-<ScrollView orientation="vertical">
-    
-  <StackLayout flexWrap="wrap" justifyContent="space-around" class="p-15 " backgroundColor="#FFF7DF">
-      <FlexboxLayout flexWrap="wrap" justifyContent="space-around" class="p-15 " backgroundColor="#FFF7DF">
-
-          <StackLayout *ngFor="let producto of productos" id="card" class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="lightgray">
-              <Image class="imagen_servicio" [src]="producto.foto"></Image>
-              <Label  text="{{ producto.nombre }}" borderRadius="5" backgroundColor="lightgray"></Label>
-              <label text="{{ producto.descripcion_producto }}"></label>
-              <button [nsRouterLink]="['/cotizacion']" text=" $ {{ producto.Precio }}"> </button>
-          </StackLayout >
-   
-      </FlexboxLayout> 
-
-  </StackLayout>
-
-</ScrollView>
-<GridLayout rows=" *, auto" height="100%">
-    
-  <StackLayout  dock="bottom" row="1" orientation="horizontal" horizontalAlignment="center">
-    <Button class="fas" text="&#xf015;" [nsRouterLink]="['/home']"></Button>
-    <Button class="fas" text="&#xf217;" [nsRouterLink]="['/productos']"></Button>
-    <Button class="fas" text="&#xf007;" [nsRouterLink]="['/verperfil']"></Button>
-  </StackLayout>   
-
-</GridLayout>
+<StackLayout >
+  <ListView height="150" [items]="productos" (itemTap)="onItemTap($event)" class="list-group">
+      <ng-template let-item="item" let-i="index" let-odd="odd" let-even="even">
+          <GridLayout columns="30, *, 35, auto">
+              <Label [text]="item.id" col="0" class="fas list-group-item"></Label>
+              <Label [text]="item.nombre" col="1" class="fas list-group-item"></Label>
+              <Label text="&#xf2ed;" col="2" class="far list-group-item" (tap)="eliminarCat(item)"></Label>
+              <Label text="&#xf044;" col="3" class="far list-group-item" (tap)="editarCat(item)"></Label>
+          </GridLayout>
+      </ng-template>
+  </ListView>
+</StackLayout>

@@ -17,7 +17,7 @@ import { CalificacionFormComponent } from "./components/calificacion_form/califi
 
 
 export const appRoutes: any = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: '', redirectTo: 'landing', pathMatch: 'full' },
   { path: "login", component: LoginComponent },
   { path: "home", component: HomeComponent },
   { path: "citas", component: CitasComponent },

@@ -1,6 +1,6 @@
 <ActionBar background="black">
     <Label class="titulo" text="SERVICIOS" color="white"></Label>
-    <NavigationButton text="Go back" android.systemIcon="ic_menu_back" (tap)="onTap()" />
+    <NavigationButton text="Go back" [nsRouterLink]="['/landing']" (tap)="onTap()" />
 </ActionBar>
 
 <ScrollView orientation="vertical">
