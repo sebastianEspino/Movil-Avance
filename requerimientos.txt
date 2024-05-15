@@ -1,4 +1,0 @@
-# Librerías del Proyecto NativeScript
-
-npm i nativescript-exit
-

@@ -1,16 +1,22 @@
 import { Router } from "@angular/router"; 
 import { Component, OnInit } from '@angular/core'
+import { Page } from "@nativescript/core";
+
 
 
 @Component({
     selector: 'landing',
     templateUrl: './landing.html',
   })
-  export class LandingComponent {
-    public constructor(private router: Router) {
+  export class LandingComponent implements OnInit {
+    public constructor(private router: Router, private page: Page) {
       // Use the component constructor to inject providers.
     }
+
+    ngOnInit(): void {
+        this.page.actionBarHidden = true;
+    }
     public onTap(){
-        this.router.navigate(["home"]);
+      this.router.navigate(["login"]);
       }
 }
