@@ -1,23 +1,22 @@
-import { HomeComponent } from "./components/home/home"; 
-import { CitasComponent } from "./components/citas/citas"; 
+import { HomeComponent } from "./components/home/home";
+import { CitasComponent } from "./components/citas/citas";
 import { LoginComponent } from "./components/login/login";
 import { VerPerfilComponent } from "./components/verPerfil/verperfil";
 import { FormularioDateComponent } from "./components/formularioDate/formularioDate";
 import { CalificacionesComponent } from "./components/calificaciones/calificaciones";
 import { RegistroComponent } from "./components/registro/registro";
-import { LandingComponent } from "./components/landing/landing"; 
-import { CotizacionComponent } from "./components/cotizacion/cotizacion"; 
-import { ServicioComponent } from "./components/servicio/servicio"; 
-import { ProductosComponent } from "./components/productos/productos"; 
-import { Producto_VistaComponent } from "./components/producto_vista/producto_vista"; 
-import { EditarPerfilComponent } from "./components/editarPerfil/editarPerfil"; 
+import { LandingComponent } from "./components/landing/landing";
+import { CotizacionComponent } from "./components/cotizacion/cotizacion";
+import { ServicioComponent } from "./components/servicio/servicio";
+import { ProductosComponent } from "./components/productos/productos";
+import { EditarPerfilComponent } from "./components/editarPerfil/editarPerfil";
 import { CalificacionFormComponent } from "./components/calificacion_form/calificacionForm";
 
 
 
 
 export const appRoutes: any = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: '', redirectTo: 'productos', pathMatch: 'full' },
   { path: "login", component: LoginComponent },
   { path: "home", component: HomeComponent },
   { path: "citas", component: CitasComponent },
@@ -29,11 +28,10 @@ export const appRoutes: any = [
   { path: "cotizacion", component: CotizacionComponent },
   { path: "servicio", component: ServicioComponent },
   { path: "productos", component: ProductosComponent },
-  { path: "producto_vista", component: Producto_VistaComponent },
-  { path: "editarPerfil" , component: EditarPerfilComponent },
-  { path: "formulario_calificacion" , component: CalificacionFormComponent },
-  
-  
+  { path: "editarPerfil", component: EditarPerfilComponent },
+  { path: "formulario_calificacion", component: CalificacionFormComponent },
+
+
 
 ];
 
@@ -49,7 +47,7 @@ export const appComponents: any = [
   CotizacionComponent,
   ServicioComponent,
   ProductosComponent,
-  Producto_VistaComponent,
+
   EditarPerfilComponent,
   CalificacionFormComponent
 
