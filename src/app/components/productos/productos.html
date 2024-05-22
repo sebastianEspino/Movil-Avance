@@ -11,8 +11,9 @@
           <StackLayout *ngFor="let producto of productos" id="card" class="p-5 m-l-15 m-r-15 m-b-15 text-center" backgroundColor="lightgray">
               <Image class="imagen_servicio" [src]="producto.foto"></Image>
               <Label  text="{{ producto.nombre }}" borderRadius="5" backgroundColor="lightgray"></Label>
-              <label text="{{ producto.descripcion_producto }}"></label>
-              <button [nsRouterLink]="['/cotizacion']" text=" $ {{ producto.Precio }}"> </button>
+              <label text="{{ producto.descripcion_producto }}   "></label>
+              <label text="$ {{ producto.Precio }}   "></label>
+              <button (click)="setProducto()" text="Añadir al carrito"> </button>
           </StackLayout >
    
       </FlexboxLayout> 
