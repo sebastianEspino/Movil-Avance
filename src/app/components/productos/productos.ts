@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 import { Router } from "@angular/router";
-import { ApiService } from './api.service';
+import { ApiService } from 'src/app/components/carrito/carrito.service';
 import { ItemEventData } from "@nativescript/core/ui/list-view";
 import { Dialogs } from '@nativescript/core'
 
@@ -10,35 +10,13 @@ import { Dialogs } from '@nativescript/core'
     styleUrls: ['./productos.css']
 })
 export class ProductosComponent {
-    public productos: any[];
-    public carrito = [];
-
+    productos: any[];
 
     public constructor(private router: Router, private apiService: ApiService) {
         // Use the component constructor to inject providers.
         this.obtenerTodos();
-
     }
 
-
-
-    public setProducto(args: ItemEventData) {
-        const register = this.productos[args.index];
-        this.apiService.getRegisterById(register.id).subscribe((res) => {
-            // Agregar el producto al carrito
-            this.agregarProductoAlCarrito(res);
-            // Mostrar el contenido del carrito en la consola
-            console.log("Contenido del carrito después de agregar el producto:", this.carrito);
-            // Mostrar los detalles del producto en un cuadro de diálogo
-            Dialogs.alert({
-                title: 'Detalles!',
-                message: `ID: ${res.id}\nNOMBRE: ${res.nombre}\nDESCRCIPCIÓN: ${res.descripcion_producto} `,
-                okButtonText: 'OK',
-                cancelable: true,
-            });
-            console.info(res);
-        });
-    }
 
     public onTap() {
         this.router.navigate(["home"]);
@@ -64,11 +42,8 @@ export class ProductosComponent {
         });
     }
 
-    //Esta funcion elimina el producto al agregarlo al carrito
 
-
-
-    public agregarProductoAlCarrito(res) {
-        this.carrito.push(res)
-    }
+    addToCart(producto: any): void {
+        this.apiService.addToCart(producto);
+      }
 }

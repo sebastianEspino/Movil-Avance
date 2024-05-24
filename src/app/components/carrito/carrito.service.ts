@@ -1,15 +1,30 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Storage } from '@nativescript/core';
 import { Observable } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
+    apiUrl = 'http://10.171.64.17:8000/api/1.0';
+    private storage: Storage;
 
-  apiUrl = 'http://10.171.64.17:8000/api/1.0';
+  constructor(private http: HttpClient) {
+    this.storage = new Storage();
+  }
 
-  constructor(private http: HttpClient) { }
+
+  addToCart(product: any): void {
+    const cart = this.storage.getItem('cart') || [];
+    cart.push(product);
+    this.storage.setItem('cart', cart);
+  }
+
+  getCart(): any[] {
+    return this.storage.getItem('cart') || [];
+  }
 
   getRegisters(): Observable<any[]> {
     return this.http.get<any[]>(`${this.apiUrl}/Productos/`);
@@ -31,6 +46,7 @@ export class ApiService {
   deleteRegister(id: number): Observable<any> {
     return this.http.delete<any>(`${this.apiUrl}/Productos/${id}/`);
   }
-
-
+  setItem(key: string, value: any): Promise<void> {
+    return this.storage.setItem(key, value);
+  }
 }

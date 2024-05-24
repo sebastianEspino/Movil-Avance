@@ -1,0 +1,17 @@
+
+
+<ActionBar title="Carrito de compras"></ActionBar>
+
+<ScrollView>
+  <StackLayout>
+    <ng-container *ngFor="let product of cart">
+      <GridLayout columns="*, auto" rows="auto">
+        <Image [src]="product.image" col="0" row="0"></Image>
+        <Label  text="{{ producto.nombre }}" borderRadius="5" backgroundColor="lightgray"></Label>
+        <label text="{{ producto.descripcion_producto }}   "></label>
+        <label text="$ {{ producto.Precio }}   "></label>
+        <Button text="Eliminar" (tap)="removeFromCart(product)"></Button>
+      </GridLayout>
+    </ng-container>
+  </StackLayout>
+</ScrollView>

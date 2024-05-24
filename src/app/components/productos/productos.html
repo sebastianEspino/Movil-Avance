@@ -13,7 +13,7 @@
               <Label  text="{{ producto.nombre }}" borderRadius="5" backgroundColor="lightgray"></Label>
               <label text="{{ producto.descripcion_producto }}   "></label>
               <label text="$ {{ producto.Precio }}   "></label>
-              <button (click)="setProducto()" text="Añadir al carrito"> </button>
+              <button  (tap)="addToCart(product)" text="Añadir al carrito"> </button>
           </StackLayout >
    
       </FlexboxLayout> 
